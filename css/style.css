@@ -8,18 +8,23 @@
 	font-size: 16px;
 }
 
+@keyframes color {
+  0%   { background: white; }
+  20%  { background: black; }
+  40%  { background: gray; }
+  60%  { background: darkslategray; }
+  80%  { background: dimgray; }
+  100% { background: black; }
+}
+
 body {
-	margin: 0;
-	--color-text: #1c1b1b;
-	--color-bg: #efe6e1;
-	--color-link: #b07656;
-	--color-link-hover: #000;
-	--color-deco: #e4dbd6;
-	color: var(--color-text);
-	background-color: var(--color-bg);
 	font-family: paralucent, sans-serif;
 	font-family: quiroh, sans-serif;
 	font-family: mr-eaves-xl-sans, sans-serif;
+  background: #33CCCC; /* Fallback */
+  animation: color 9s infinite linear;
+  text-align: center;
+  padding: 2em;
 }
 
 /* Page Loader */
