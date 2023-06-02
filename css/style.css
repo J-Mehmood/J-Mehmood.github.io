@@ -11,10 +11,16 @@
 @keyframes color {
   0%   { background: white; }
   20%  { background: black; }
-  40%  { background: gray; }
-  60%  { background: darkslategray; }
-  80%  { background: dimgray; }
+  40%  { background: white; }
+  60%  { background: black; }
+  80%  { background: white; }
   100% { background: black; }
+  0%   { color: black; }
+  20%  { color: white; }
+  40%  { color: black; }
+  60%  { color: white; }
+  80%  { color: black; }
+  100% { color: white; }
 }
 
 body {
