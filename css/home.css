@@ -119,3 +119,21 @@ a:focus {
 	counter-reset: figure; 
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5vh;
+}
+
+.grid__item {
+    height: 100vh; 
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+@media screen and (min-width: 53em) {
+    .frame {
+        height: 100vh;
+        align-items: space-between;
+    }
+}
