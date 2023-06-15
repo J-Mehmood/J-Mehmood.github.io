@@ -1,0 +1,117 @@
+.wrapper {
+    background-image: url(../img/76Sr.gif);
+    border: 5px solid lightgreen;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    width: 600px;
+    margin: auto;
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd hd hd"
+        "main1 main2 main3 sd sd sd sd sd sd sd"
+        "main4 main5 main6 sd sd sd sd sd sd sd"
+        "main7 main8 main9 sd sd sd sd sd sd sd"
+        "ft ft ft ft ft ft ft ft ft ft";
+}
+
+
+.box {
+    background-color: gray;
+    border-radius: 5px;
+    color: darkkhaki;
+    border: 2px solid greenyellow;
+}
+
+.header {
+    grid-area: hd;
+    text-align: center;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.sidebar {
+    grid-area: sd;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.content1 {
+    grid-area: main1;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+.content2 {
+    grid-area: main2;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+.content3 {
+    grid-area: main3;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+.content4 {
+    grid-area: main4;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+.content5 {
+    grid-area: main5;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+.content6 {
+    grid-area: main6;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+.content7 {
+    grid-area: main7;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+.content8 {
+    grid-area: main8;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+.content9 {
+    grid-area: main9;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+article:hover {
+    background-color: #ffeae3;
+
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid greenyellow; 
+    background-image: url(../img/cubes_passe.gif); 
+    background-size: 200px;
+}

@@ -55,4 +55,6 @@
         transform:rotate(360deg); 
     } 
 }
-  
+  .clicker{
+    cursor: pointer;
+  }

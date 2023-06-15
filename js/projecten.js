@@ -7,7 +7,7 @@ click.addEventListener("click", plekFunction)
 
 function plekFunction() {
 
-    window.location.href = `HL/index.html`
+    window.location.href = `BoterKaasEieren/index.html`
 
 };
 
@@ -23,7 +23,7 @@ click2.addEventListener("click", plekFunction2)
 
 function plekFunction2() {
 
-    window.location.href = `Escape room spel - kopie/welcome.html`
+    window.location.href = `sd22-p03-project-webcatalogus-vtrendzz-main/index.html`
 
 };
 
@@ -39,7 +39,7 @@ click3.addEventListener("click", plekFunction3)
 
 function plekFunction3() {
 
-    window.location.href = `boterkaas/boter.html`
+    window.location.href = `sd22-themaweek-2-t1l-J-Mehmood-main/index.html`
 
 };
 
@@ -55,22 +55,8 @@ click4.addEventListener("click", plekFunction4)
 
 function plekFunction4() {
 
-    window.location.href = `vtrend/index.html`
+    window.location.href = `HogerLager/index.html`
 
 };
 
 
-
-
-let click5 = document.querySelector('.click5');
-
-click5.addEventListener("click", plekFunction5)
-
-
-
-
-function plekFunction5() {
-
-    window.location.href = `wack/index.html`
-
-};

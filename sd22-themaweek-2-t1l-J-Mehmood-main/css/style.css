@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body13 {
+    background-color: black;
+}
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    margin: auto;
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd hd"
+        "ls main1 main1 main1 main1 main1 main1 main1 rs"
+        "ls main1 main1 main1 main1 main1 main1 main1 rs"
+        "ls main1 main1 main1 main1 main1 main1 main1 rs"
+        "ls main1 main1 main1 main1 main1 main1 main1 rs"
+        "ls main1 main1 main1 main1 main1 main1 main1 rs"
+        "ls main1 main1 main1 main1 main1 main1 main1 rs"
+        "ls main1 main1 main1 main1 main1 main1 main1 rs"
+        "ls main1 main1 main1 main1 main1 main1 main1 rs"
+        "ft ft ft ft ft ft ft ft ft"
+        "ft ft ft ft ft ft ft ft ft";
+}
+
+
+.box {
+    border-top: 20px solid darkred;
+}
+
+
+.header {
+    grid-area: hd;
+    border-top: 20px solid darkred;
+}
+
+.left-sidebar {
+    grid-area: ls;
+    background-image: url(../img/dd.gif);
+}
+
+.content1 {
+    grid-area: main1;
+    background-color: black;
+
+}
+
+.content2 {
+    grid-area: main2;
+}
+
+.content3 {
+    grid-area: main3;
+}
+
+.content4 {
+    grid-area: main4;
+}
+
+.content5 {
+    grid-area: main5;
+}
+
+.content6 {
+    grid-area: main6;
+}
+
+.content7 {
+    grid-area: main7;
+}
+
+.content8 {
+    grid-area: main8;
+}
+
+.content9 {
+    grid-area: main9;
+}
+
+.right-sidebar {
+    grid-area: rs;
+    background-image: url(../img/dd.gif);
+}
+
+.footer {
+    border-top: 20px solid darkred;
+    grid-area: ft;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.topnav {
+    background-color: none;
+    overflow: hidden;
+    border-top: 20px solid ;
+}
+
+
+.topnav a {
+    float: left;
+    color: darkred;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnav a:hover {
+    background-color: darkred;
+    color: black;
+}
+
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.whole:hover::after {
+    content: url(../img/wlr11.png);
+}
+
+.lotta:hover::after {
+    content: url(../img/wlr2.png);
+}
+
+.red:hover::after {
+    content: url(../img/wlr77.png);
+}
+
+.slideshow-container {
+    width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.myslides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: black;
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .wlrr {
+    float: right;
+  }
+
+ .j22 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: left;
+ }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 650px;
+    border: 1px solid crimson;
+    border-radius: 13px;
+}
+
+.flex-container:hover {
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+    border-radius: 15px;
+}
+
+.flex-container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid crimson;
+    border-radius: 13px;
+}
+
+.flex-container-2:hover {
+    border-right: 10px solid darkslategrey;
+    border-bottom: 10px solid darkslategray;
+    border-radius: 15px;
+}
+
+.flex-container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid crimson;
+    border-radius: 13px;
+}
+
+.flex-container-3:hover {
+    border-right: 10px solid wheat;
+    border-bottom: 10px solid wheat;
+    border-radius: 15px;
+    background-attachment: fixed;
+}
+
+.listing {
+    display: grid;
+    margin: 2em;
+    list-style: none;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.listing li {
+    border: 1px solid brown;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.listing li:hover {
+    background-color: darkred;
+}
+
+.listing li h2 {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.listing .cta {
+    margin-top: auto;
+    border-top: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.listing .cta a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f2f2f2;
+}
+
+.listing .body {
+    padding: 10px;
+    background-size: 200px;
+    height: 300px;
+}
+
+.card1 {
+    background-image: url(../img/ninjaassassin.jpg);
+}
+
+.card2 {
+    background-image: url(../img/thedarkknight.jpg);
+}
+
+.card3 {
+    background-image: url(../img/breakingbad2.jpg);
+}
+
+.card4 {
+    background-image: url(../img/thepaleblueye.jpg);
+    size-adjust: 00px;
+}
+
+.card5 {
+    background-image: url(../img/shawshankredemption2.jpg);
+}
+
+.card6 {
+    background-image: url(../img/thepurge.jpg);
+}
+
+.card7 {
+    background-image: url(../img/theconjuring.jpg);
+}
+
+.card8 {
+    background-image: url(../img/1922.png);
+}
+
+.card9 {
+    background-image: url(../img/escaproom.png);
+}
+
+.card10 {
+    background-image: url(../img/django.jpg);
+}
+
+.card11 {
+    background-image: url(../img/terminator2.jpg);
+}
+
+.card12 {
+    background-image: url(../img/thshining.jpg);
+}
+
+.na3 {
+    border: 2px solid darkred;
+    border-radius: 10px;
+    width: 150px;
+    height: 200px;
+}
+
+.h11 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border-bottom: 5px solid darkred;
+    color: white;
+    background-image: url(../img/dd.gif);
+}
+
+.p11 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:left;
+}
+
+
+
+.na4 {
+    width: 180px;
+    height: 280px;
+    border: 2px solid darkred;
+    border-radius: 10px;
+}
+
+
+
+
+
+.body11 {
+    background-image: url(../img/ninjaassassinscreen.jpg);
+}
+
+.body33 {
+    background-image: url(../img/33256.jpg);
+}
+
+ .body55 {
+    background-image: url(../img/breakingbadbg.jpg);
+}
+
+.body5 {
+    background-image: url(../img/the-pale-blue-eye-bg.jpg);
+    background-size: 1920px;
+}
+
+.body88 {
+    background-image: url(../img/tshrbg.jpg);
+}
+
+.body99 {
+    background-image: url(../img/theforeverpurgebg1.jpg);
+}
+
+.body111 {
+    background-image: url(../img/36797-The-Conjuring-HD-Wallpaper.jpg);
+}
+
+.body112 {
+    background-image: url(../img/1922-5a0721d78c57c.jpg);
+}
+
+.body113 {
+    background-image: url(../img/1245318.jpg);
+}
+
+.body114 {
+    background-image: url(../img/django111.jpg);
+}
+
+.body115 {
+    background-image: url(../img/terminator222.jpg);
+}
+
+.body116 {
+    background-image: url(../img/shining.jpg);
+    background-size: 1800px;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.Btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 2px solid darkred;
+    border-radius: 5px;
+}
