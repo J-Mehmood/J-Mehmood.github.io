@@ -8,6 +8,8 @@
 * Copyright 2019, Codrops
 * http://www.codrops.com
 */
+
+/* in het engels */
 {
     // helper functions
     const MathUtils = {
